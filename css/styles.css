@@ -523,7 +523,6 @@ main {
     top: 50%;
     fill: #2e2f42;
     transform: translateY(-50%);
-    transform: translateX(-48%);
 }
 
 .form-input::placeholder {
