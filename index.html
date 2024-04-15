@@ -439,16 +439,18 @@
             </button>
             <p class="modal-p">Leave your contacts and we will call you back</p>
             <form class="form">
-                <div>
+                <div class="modal-form-box">
                     <label class="form-label" for="user-name">
                         Name
                         <div class="modal-box">
-                            <input type="text" name="user-name" class="form-input"  autofocus />
+                            <input type="text" id="user-name" name="user-name" class="form-input"  autofocus />
                             <svg width="18" height="24" class="modal-icon">
                                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                             </svg>
                         </div>
                     </label>
+                </div>
+                <div class="modal-form-box">
                     <label class="form-label" for="user-tel">
                         Phone
                         <div class="modal-box">
@@ -458,6 +460,8 @@
                             </svg>
                         </div>
                     </label>
+                </div>
+                <div class="modal-form-box">
                     <label class="form-label" for="user-email">
                         Email
                         <div class="modal-box">
@@ -467,7 +471,8 @@
                             </svg>
                         </div>
                     </label>
-                    <label class="form-label">
+                <div>
+                    <label class="form-label" for="user-comment">
                         Comment
                         <textarea class="form-textarea" name="description" id="user-comment" for="user-comment"
                             placeholder="Please provide a detailed issue description"></textarea>
