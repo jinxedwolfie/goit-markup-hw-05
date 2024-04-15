@@ -438,8 +438,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    pointer-events: all;
 }
 
 .backdrop .is-open {
@@ -705,16 +705,28 @@ main {
 .footer-input::placeholder{
     color: #FFFFFF;
 }
+.footer-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 80px;
+}
 
 .footer-input {
     height: 40px;
     background-color: transparent;
     outline: transparent;
     width: 264px;
-    color:#FFFFFF;
     border-radius: 4px;
-    border-color: #FFFFFF;
+    border: 1px solid #ffffff;
     padding: 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
 }
 
 .footer-form {
@@ -722,23 +734,19 @@ main {
     justify-content: center;
     align-items: center;
     gap: 24px;
-    margin-left: 80px;
 }
 
-.button-content{
+.button-footer {
+    font-family: "Roboto", sans-serif;
     display: flex;
-    gap: 16px;
     justify-content: center;
     align-items: center;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
-    text-align: center;
-}
-
-.button-footer {
-    max-width: 165px;
+    height: 40px;
+    min-width: 165px;
     padding: 8px 24px;
     gap: 16px;
     border-radius: 4px;
@@ -747,8 +755,6 @@ main {
     color: #ffffff;
     cursor: pointer;
     border: none;
-    display: block;
-    margin-top: 40px;
 }
 
  .button-footer:focus,
