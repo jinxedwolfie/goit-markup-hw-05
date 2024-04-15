@@ -604,6 +604,7 @@ main {
     letter-spacing: 0.04em;
     text-align: left;
     color:#8E8F99;
+    
 
 }
 
@@ -618,22 +619,32 @@ main {
     text-align: left;
     color: #4D5AE5;
     text-decoration: underline;
+    line-height: 1.33;
+    text-decoration-skip-ink: none;
+    padding-left: 3px;
+    cursor:pointer;
 }
 
 .checkbox-label .span {
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px; 
     width: 16px;
-    height: 16px; 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex; 
-    align-items: center; 
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
+    display: flex;
+    align-items:center;
     justify-content: center;
     fill: transparent;
-    background-color: #404bbf;
-    border: none; 
+    cursor:pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
+.modal-checkbox:checked + .checkbox-label span {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
 
+}
 
 .modal-form-checkbox {
     margin-bottom: 24px;
