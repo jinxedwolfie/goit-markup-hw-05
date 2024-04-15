@@ -600,15 +600,19 @@ main {
 .checkbox-label {
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     text-align: left;
     color:#8E8F99;
+
 }
 
-.checkbox-label .link {
+.checkbox-label .link {   
     font-size: 12px;
+    width: 16px;
+    height: 16px; 
     font-weight: 400;
+    border-radius: 2px; 
     line-height: 16px;
     letter-spacing: 0.04em;
     text-align: left;
@@ -616,8 +620,25 @@ main {
     text-decoration: underline;
 }
 
+.checkbox-label .span {
+    
+    border: 1px solid rgba(46, 47, 66, 0.4); 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+    fill: transparent;
+    background-color: #404bbf;
+    border: none;
+    fill:#F4F4FD; 
+}
+
+
+.modal-form-checkbox {
+    margin-bottom: 24px;
+}
+
 .modal-button {
-    margin-top: 24px;
     text-align: center;
     padding: 16px 64px;
     border: none;

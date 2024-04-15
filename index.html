@@ -479,11 +479,20 @@
                      <textarea class="form-textarea" name="description" id="user-comment" for="user-comment"
                             placeholder="Text input"></textarea>
                 </div>
-                
-                <label class="checkbox-label" for="accept">
-                    <input type="checkbox" name="user-comment" class="form-checkbox" value="accept" />
-                    I accept the terms and conditions of the <a class="link" href="#">Privacy Policy</a>
+                <div class="modal-form-checkbox">
+                    <input type="checkbox"  name="user-privacy" class="form-checkbox"  value="true"/>
+                <label for="user-privacy" class="checkbox-label">
+                    I accept the terms and conditions of the
+                <span class="span">
+                    <svg width="10" height="8" class="checkbox-icon">
+                        <use href="./images/icons.svg#icon-Checkbox">
+                        </use>
+                    </svg>
+                </span>
+                     <a class="link" href="#">Privacy Policy</a>
                 </label>
+                </div>
+                
                 <button class="modal-button" type="submit">Send</button>
             </form>
     
