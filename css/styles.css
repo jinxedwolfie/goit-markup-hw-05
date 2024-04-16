@@ -439,8 +439,8 @@ main {
     justify-content: center;
     align-items: center;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 1;
-    pointer-events: all;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .backdrop .is-open {
@@ -552,6 +552,7 @@ main {
     line-height: 14px;
     letter-spacing: 0.04em;
     text-align: left;
+    color: #2E2F4266;
 }
 
 .form-input {
@@ -661,12 +662,18 @@ main {
     line-height: 24px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    margin-left:100px;
+    margin-left:auto;
+    margin-right: auto;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    min-width: 169px;
     display: block;
+
 }
+.modal-button:hover,
+.modal-button:focus{
+    background-color: #404BBF;
+}
+
+/* footer*/
 
 .site-info {
     background-color: #2E2F42;
@@ -709,10 +716,11 @@ main {
 .logo-footer {
     color: #F4F4FD;
 }
-.footer-box {
-    
+
+.footer-box-{
     margin-right: 120px;
 }
+   
 .footer-container {
     display: flex;
     align-items: baseline;
@@ -728,12 +736,6 @@ main {
     max-width: 264px;
 }
 
-.social-box {
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-}
 
 .social-box-text {
     margin-bottom: 16px;
@@ -777,7 +779,8 @@ main {
 .footer-input::placeholder{
     color: #FFFFFF;
 }
-.footer-box{
+
+.subscribe-box{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -789,17 +792,21 @@ main {
     background-color: transparent;
     outline: transparent;
     width: 264px;
-    border-radius: 4px;
     border: 1px solid #ffffff;
-    padding: 16px;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    padding-left: 16px;
+    padding:0 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
 }
+
+.footer-input:focus{
+    border-color: #31D0AA;
+    
+}
+
 .subscribe-icon {
     margin-left: 16px;
 }
@@ -810,7 +817,16 @@ main {
     align-items: center;
     gap: 24px;
 }
-
+.footer-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    display: block;
+}
 .button-footer {
     font-family: "Roboto", sans-serif;
     display: flex;
